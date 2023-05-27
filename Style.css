@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+/* Estilos de Header */
+#navbar-pinterest{
+    width: auto;
+    height: 80px;
+    margin: 0 0 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 18fr 1fr 1fr 1fr 1fr;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+}
+
+#navbar-pinterest div{
+    justify-self: center;
+    align-self: center;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+#inicio a{
+    height: 50px;
+    width: 85px;
+    background-color: none;
+    color: black;
+    border-radius: 33px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pinterest-icon img{
+    width: 30px;
+    height: auto;
+}
+
+
+span{
+    color: white;
+}
+#flecha_abajo {
+    width: 15px;
+    height: auto;
+
+}
+
+.buscador {
+    background-color: #e2e2e2;
+    width: 95%;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 100px;
+    border: none;
+    display: flex;
+    justify-content: start;
+    padding-left: 15px;
+    align-items: center;
+}
+
+.buscador .rellenoicon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+.buscador input{
+    width: 450px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.buscador imput::placeholder{
+    color: #878787;
+}
+
+.buscador:hover{
+    background-color: #d0d0d0;
+}
+
+#notifications{
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 100%;
+}
+
+.icons {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons:hover{
+    background-color: #e2e2e2;
+
+}
+
+#message{
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 100%;
+}
+
+#profile-img{
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 100%;
+
+}
+
+/* Estilos Main */
+#content{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#content .columna1{
+    display: flex;
+    margin: 15px;
+    margin-top: 100px;
+    flex-direction: column;
+    width: 1400px;
+}
+
+#content .columna2{
+    display: flex;
+    margin: 15px;
+    margin-top: 100px;
+    flex-direction: column;
+    width: 1400px;
+}
+
+#content .columna3{
+    display: flex;
+    margin: 15px;
+    margin-top: 100px;
+    flex-direction: column;
+    width: 1400px;
+}
+
+#content .columna4{
+    display: flex;
+    margin: 15px;
+    margin-top: 100px;
+    flex-direction: column;
+    width: 1400px;
+}
+
+#content .columna5{
+    display: flex;
+    margin: 15px;
+    margin-top: 100px;
+    flex-direction: column;
+    width: 1400px;
+}
+
+
+#content .card-image .grande{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    margin: 10px 10px 10px 10px;
+}
+
+#content .card-image .chica{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    margin: 10px 10px 10px 10px;
+}
+
+/*Boton de Dudas lateral */
+.dudas{
+    height: 50px;
+    width: 45px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 100%;
+    border: 3px solid white;
+}
+
+#iconpregunta{
+    width: 20px;
+    height: 25px;
+    border-radius: 100%;
+}
+
+.dudas:hover{
+    background-color: #e2e2e2;
+    box-shadow: 0 1px 6px 0 #20212447;
+}
+
+/*Estilos para hover de las imagenes*/
+
+div .fondohober{
+    position: relative; 
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+div .overlay{
+    position: absolute;
+    height: 95%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgb(95, 88, 88, 0.4);
+    border-radius: 25px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.overlay .buttonsave{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.overlay .icon-editar {
+    grid-column: 3 / 4;
+    grid-row: 3/ 4;
+}
+
+.overlay .icon-option{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.fondohober:hover .overlay{
+    opacity: 1;
+} 
+
+.buttonsave {
+    height: 50px;
+    width: 85px;
+    background-color: red;
+    color: white;
+    border-radius: 33px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.icon-editar{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    background-color: #d0d0d0;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-editar img{
+    width: 60%;
+    height: 60%;
+
+}
+.icon-option{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    align-self: flex-end;
+    justify-self: end;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d0d0d0;
+}
+
+.icon-option img{
+    width: 60%;
+    height: 60%;
+}
+
+@media (max-width: 900px) {
+    #inicio a{
+        background-color: white;
+        color: black;
+    }
+    .crear a{
+        display: none;
+    }
+    
+    .finder{
+        background-color: white;
+    }
+    #navbar-pinterest{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+
+    
+
+
+
+    
+    
+}
+
+
